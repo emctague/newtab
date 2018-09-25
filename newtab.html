@@ -4,43 +4,7 @@
 	<meta charset="utf-8" />
 	<title>New Tab</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		* { box-sizing: border-box; }
-		body {
-			color: #777;
-			font-size: 1.5em;
-			margin: 6em;
-		}
-		b {
-			color: #222;
-			font-weight: normal;
-		}
-		#reminders div {
-			background: #222;
-			color: #eee;
-			padding: 0.5em;
-			margin: 0 1em;
-			width: 70vw;
-			border-top: 2px solid #fff;
-		}
-		#reminders div:hover {
-			color: #222;
-			background: #fff;
-		}
-		input {
-			margin: 0 1em;
-			border: 0;
-			box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.4);
-			font-size: inherit;
-			padding: 0.5em;
-			display: block;
-			width: 70vw;
-		}
-		input:focus {
-			background: #f7f7f7;
-			outline: none;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<p>Hello, <b id="name"></b>.</p>
@@ -54,7 +18,7 @@
 	<div id="reminders">
 
 	</div>
-	<input type="text" id="add_reminder">
+	<input type="text" id="add_reminder" placeholder="Add a Reminder">
 	<script src="Display.js"></script>
 	<script src="BatteryDisplay.js"></script>
 	<script src="TimeDisplay.js"></script>
