@@ -1,3 +1,5 @@
+![Screenshot](https://lh3.googleusercontent.com/jqkOqZKF6c35hKR1uvZFzmElbykaCrV_VPynmMgfLWYuw7xFMGcerpQGHgEYbKBLQCqMGTdkKg=w640-h400-e365)
+
 # Tague's New Tab Page
 
 https://chrome.google.com/webstore/detail/tagues-new-tab-page/gpikjebkoliccjgjndkdklcngadcpplp
