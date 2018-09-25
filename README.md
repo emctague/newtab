@@ -17,3 +17,6 @@ markup.
 
 Modules must follow the `<Thing>Display` naming pattern and properly extend the `Display`
 class as specified in `Display.js`.
+
+I would especially appreciate any suggestions for a new style for the reminder list.
+I hate the way I've designed it but can't really think of a better style.
