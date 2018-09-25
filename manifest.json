@@ -1,7 +1,7 @@
 {
     "name": "tague's New Tab Page",
-    "version": "1.0",
-    "description": "New Tab Page",
+    "version": "1.1",
+    "description": "A Minimal New Tab Page",
     "manifest_version": 2,
 
     "chrome_url_overrides" : {
