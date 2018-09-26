@@ -1,4 +1,4 @@
-![Screenshot](https://lh3.googleusercontent.com/jqkOqZKF6c35hKR1uvZFzmElbykaCrV_VPynmMgfLWYuw7xFMGcerpQGHgEYbKBLQCqMGTdkKg=w640-h400-e365)
+![Screenshot](https://lh3.googleusercontent.com/Ov6tJFGaHA5NK3dLrdEJt7vvLifsWL5uYa1H6CtwID9DjWSMcSikrvyUH8Jjt_Wce9uHLDUrI2U=w640-h400-e365)
 
 # Tague's New Tab Page
 
