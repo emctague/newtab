@@ -1,36 +1,22 @@
 class ReminderDisplay extends Display {
 	constructor () {
-		super ("ReminderDisplay", { remList: "#reminders", addRem: "#add_reminder" })
+		super ("ReminderDisplay", { reminders: "#reminders" })
 	}
 
 	setup () {
-		if (!this.data.reminders) this.data.reminders = []
+		if (!this.data.reminders) this.data.reminders = ""
 
-		this.redraw ()
+		this.reminders.innerHTML = this.data.reminders
 
-		this.addRem.onkeyup = (e) => {
-			if (e.keyCode == 13) {
-				this.data.reminders.push (this.addRem.value)
-				this.save ()
-				this.addRem.value = ""
-				this.redraw ()
-			}
+		const saveCallback = () => {
+			this.data.reminders = this.reminders.innerHTML
+			this.save ()
 		}
-	}
 
-	redraw () {
-		this.remList.innerHTML = ""
-		for (let i = 0; i < this.data.reminders.length; i++) {
-			const obj = document.createElement ("div")
-			obj.innerText = this.data.reminders[i]
-			obj.style.cursor = "pointer"
-			obj.onclick = () => {
-				this.data.reminders.splice (i, 1)
-				this.save ()
-				this.redraw ()
-			}
-			this.remList.appendChild (obj)
-		}
+		this.reminders.onchange = saveCallback
+		this.reminders.onkeyup = saveCallback
+
+		this.reminders.focus()
 	}
 }
 

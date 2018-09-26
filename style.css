@@ -1,49 +1,54 @@
 * { box-sizing: border-box; }
 
 body {
-	color: #444;
-	font-size: 1.5em;
-	margin: 6em;
-	background: #f5f5f5;
+	color: #707070;
+	font-size: 30px;
+	margin: 85px 137px;
+	font-family: 'Segoe UI', 'Helvetica', sans-serif;
 }
 
 b {
-	color: #222;
+	color: #474747;
 	font-weight: normal;
 }
 
+#battery, #greeting, #datetime {
+	margin-bottom: 50px;
+}
+
+#battery {
+	font-size: 20px;
+}
+
+#namerow {
+	font-size: 50px;
+}
+
+#timerow {
+	font-size: 40px;
+}
+
 #reminders {
-	border-top: 3px solid #ddd;
-	margin: 2em -1.5em 0 -1.5em;
-}
-
-#reminders div, input {
 	display: block;
-	padding: 1em 1.5em;
-	background: #fff;
-	color: #222;
-	font-size: .9em;
+	resize: none;
 	border: 0;
-	width: 100%;
-	border-bottom: 1px solid #eee;
-}
-
-#reminders div:hover {
-	background: #dfdfdf;
-}
-
-input {
-	background: #ddd;
-	margin: 0 -1.5em;
-	border-bottom: 2px solid #bbb;
-	width: calc(100% + 3em);
-}
-
-input[value=''] {
-	font-style: italic;
-}
-
-input:focus {
-	background: #f7f7f7;
+	width: 50%;
+	min-height: 9em;
+	background: #f3f3f3;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	margin-top: 15px;
+	padding: 20px 25px;
+	font-size: 20px;
+	font-family: inherit;
+	color: #474747;
 	outline: none;
+	transition: box-shadow 0.2s;
+}
+
+#reminders * {
+	max-width: 100%;
+}
+
+#reminders:focus {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }

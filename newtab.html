@@ -7,18 +7,25 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<p>Hello, <b id="name"></b>.</p>
-	<p>
-		It is currently <b id="time"></b>.
-	</p>
-	<p>
-		Your battery is at <b id="batlevel"></b> and is <b id="batstat"></b>.
-	</p>
-	<p>Don't forget:</p>
-	<div id="reminders">
-
+	<div id="battery">
+		🗲 <b id="batlevel">82%</b> and <b id="batstat">discharging.</b>
 	</div>
-	<input type="text" id="add_reminder" placeholder="Add a Reminder">
+
+	<div id="greeting">
+		Hello,
+		<div id="namerow"><b id="name"></b>.</div>
+	</div>
+
+	<div id="datetime">
+		It is
+		<div id="timerow"><b id="time"></b>.</div>
+	</div>
+
+	<div id="remind">
+		Don't forget...
+		<div id="reminders" contenteditable></textarea>
+	</div>
+	
 	<script src="Display.js"></script>
 	<script src="BatteryDisplay.js"></script>
 	<script src="TimeDisplay.js"></script>
